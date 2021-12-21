@@ -1,0 +1,131 @@
+{
+  "attributes": {
+    "account-type": {
+      "description": "Tipo de conta",
+      "misp-attribute": "text",
+      "sane_default": [
+        "member",
+        "guest"
+      ],
+      "ui-priority": 1
+    },
+    "usuario": {
+      "description": "Usuário",
+      "misp-attribute": "full-name",
+      "ui-priority": 1
+    },
+    "email": {
+      "description": "E-mail ou UPN do usuário",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cargo": {
+      "description": "Descrição do Cargo",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "telefone": {
+      "description": "Telefone para contato",
+      "misp-attribute": "phone-number",
+      "ui-priority": 1
+    },
+    "localizacao": {
+      "description": "Pais, Estado - Escritorio",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "VIP": {
+      "description": "Vip user",
+      "misp-attribute": "boolean",
+      "values_list": ["True", "False"],
+      "ui-priority": 1
+    },
+    "MFA": {
+      "description": "0= Não cadastrado, 1= Cadastrado e Imposto, 2 = Cadastrado e nao utilizado ",
+      "misp-attribute": "float",
+      "values_list": [0, 1, 2],
+      "ui-priority": 1
+    },
+    "IP": {
+      "description": "IP",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ip-sucesso": {
+      "description": "IP de sucesso",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "localizacao-sucesso": {
+      "description": "Geo-localização do IP de sucesso",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ip-sucesso-confiavel": {
+      "description": "IP de sucesso consta na lista de confiáveis",
+      "misp-attribute": "boolean",
+      "values_list": ["True", "False"],
+      "ui-priority": 1
+    },
+    "ip-falha": {
+      "description": "IP de Falha",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "localizacao-falha": {
+      "description": "Geo-localização do IP de falha",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hostname": {
+      "description": "Hostname da entidade",
+      "multiple": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ip-falha-confiavel": {
+      "description": "IP de falha consta na lista de confiáveis",
+      "misp-attribute": "boolean",
+      "values_list": ["True", "False"],
+      "ui-priority": 1
+    },
+    "app": {
+      "description": "App utilizada",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "motivo-falha": {
+      "description": "Motivo da falha",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "atividade": {
+      "description": "Atividade",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "arquivo": {
+      "description": "arquivo",
+      "misp-attribute": "filename",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "UEBA": {
+      "description": "ID/Titulo",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Objeto para coleta de dados da triagem",
+  "meta-category": "CloudTarget",
+  "name": "triagem",
+  "requiredOneOf": [
+    "usuario"
+  ],
+  "uuid": "a9ba242a-494d-11ec-81d3-0242ac130003",
+  "version": 6
+}
