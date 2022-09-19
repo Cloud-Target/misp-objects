@@ -32,6 +32,11 @@
       "multiple": true,
       "ui-priority": 80
     },
+    "id": {
+      "description": "User id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "link": {
       "description": "Original Link to the GitHub account.",
       "misp-attribute": "link",
@@ -120,5 +125,5 @@
     "link"
   ],
   "uuid": "4329b5e6-8e6a-4b55-8fd1-9033782017d4",
-  "version": 2
+  "version": 3
 }
